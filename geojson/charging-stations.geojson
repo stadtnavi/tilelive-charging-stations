@@ -144,7 +144,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_0",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 1
       },
       "geometry": {
@@ -159,7 +159,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_1",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2,
         "fee": true,
         "openingHours": "24/7"
@@ -176,7 +176,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_2",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2,
         "fee": false,
         "openingHours": "24/7"
@@ -193,7 +193,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_3",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2
       },
       "geometry": {
@@ -208,7 +208,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_4",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2
       },
       "geometry": {
@@ -223,7 +223,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_5",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2,
         "openingHours": "24/7"
       },
@@ -239,7 +239,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_6",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 12,
         "fee": true,
         "openingHours": "24/7"
@@ -257,7 +257,7 @@
       "properties": {
         "name": "Aldi S\u00fcd Ladestation",
         "id": "Elektroauto-Ladestation_7",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2,
         "fee": false
       },
@@ -274,7 +274,7 @@
       "properties": {
         "name": "Sch\u00f6nbuch West",
         "id": "Elektroauto-Ladestation_8",
-        "type": "car",
+        "vehicleType": "car",
         "openingHours": "24/7"
       },
       "geometry": {
@@ -290,7 +290,7 @@
       "properties": {
         "name": "Sch\u00f6nbuch West",
         "id": "Elektroauto-Ladestation_9",
-        "type": "car",
+        "vehicleType": "car",
         "openingHours": "24/7"
       },
       "geometry": {
@@ -306,7 +306,7 @@
       "properties": {
         "name": "Sch\u00f6nbuch Ost",
         "id": "Elektroauto-Ladestation_10",
-        "type": "car",
+        "vehicleType": "car",
         "openingHours": "24/7"
       },
       "geometry": {
@@ -322,7 +322,7 @@
       "properties": {
         "name": "Sch\u00f6nbuch Ost",
         "id": "Elektroauto-Ladestation_11",
-        "type": "car",
+        "vehicleType": "car",
         "openingHours": "24/7"
       },
       "geometry": {
@@ -337,7 +337,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_12",
-        "type": "car"
+        "vehicleType": "car"
       },
       "geometry": {
         "type": "Point",
@@ -352,7 +352,7 @@
       "properties": {
         "name": "Weiler W\u00e4rme",
         "id": "Elektroauto-Ladestation_13",
-        "type": "car",
+        "vehicleType": "car",
         "fee": false
       },
       "geometry": {
@@ -367,7 +367,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_14",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 1
       },
       "geometry": {
@@ -382,7 +382,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_15",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2
       },
       "geometry": {
@@ -397,7 +397,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_16",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 4,
         "fee": true,
         "openingHours": "24/7"
@@ -414,7 +414,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_17",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2,
         "fee": true,
         "openingHours": "24/7"
@@ -431,7 +431,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_18",
-        "type": "car",
+        "vehicleType": "car",
         "fee": false
       },
       "geometry": {
@@ -446,7 +446,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_19",
-        "type": "car",
+        "vehicleType": "car",
         "fee": false
       },
       "geometry": {
@@ -461,7 +461,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_20",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2
       },
       "geometry": {
@@ -476,7 +476,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_21",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2,
         "fee": true,
         "openingHours": "24/7"
@@ -493,7 +493,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_22",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2,
         "fee": true,
         "openingHours": "24/7"
@@ -510,7 +510,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_23",
-        "type": "car"
+        "vehicleType": "car"
       },
       "geometry": {
         "type": "Point",
@@ -524,7 +524,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_24",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2,
         "fee": true,
         "openingHours": "24/7"
@@ -541,7 +541,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_25",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2,
         "fee": true,
         "openingHours": "24/7"
@@ -558,7 +558,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_26",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2,
         "fee": true,
         "openingHours": "24/7"
@@ -575,7 +575,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_27",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2,
         "fee": true,
         "openingHours": "24/7"
@@ -592,7 +592,7 @@
       "type": "Feature",
       "properties": {
         "id": "Elektroauto-Ladestation_28",
-        "type": "car",
+        "vehicleType": "car",
         "capacity": 2
       },
       "geometry": {

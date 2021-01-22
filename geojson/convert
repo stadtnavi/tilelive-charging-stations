@@ -15,7 +15,7 @@ for f in geojson["features"]:
         props["vehicleType"] = "bicycle"
 
     if(icon == "carChargeIcon"):
-        props["type"] = "car"
+        props["vehicleType"] = "car"
 
     del props["icon"]
 
