@@ -1,0 +1,58 @@
+#! /usr/bin/python3
+
+import json
+
+# read file
+with open('charging-stations.original.geojson', 'r') as myfile:
+    data=myfile.read()
+
+geojson = json.loads(data)
+
+for f in geojson["features"]:
+    props = f["properties"]
+    icon = props["icon"]["id"]
+    if(icon == "bikeChargeIcon"):
+        props["vehicleType"] = "bicycle"
+
+    if(icon == "carChargeIcon"):
+        props["type"] = "car"
+
+    del props["icon"]
+
+    name = props["name"]
+    if(name == "Fahrradladestation" or name == "Elektroauto-Ladestation"):
+        del props["name"]
+
+    del props["name_de"]
+    del props["name_en"]
+
+    attributes = props["popupContent_en"].split(",")
+
+    while("" in attributes):
+        attributes.remove("")
+
+    for a in attributes:
+        pair = a.strip().split(":")
+        key = pair[0]
+        value = pair[1]
+        if(key == "Capacity"):
+            props["capacity"] = int(value.strip())
+
+        elif(key == "Fee"):
+            props["fee"] = value.strip() == "yes"
+
+        elif(key == "Opening hours"):
+            props["openingHours"] = value.strip()
+
+        else:
+            print(key)
+
+
+    del props["popupContent_en"]
+    del props["popupContent_de"]
+    del props["popupContent"]
+
+
+with open('charging-stations.geojson', 'w') as outfile:
+    json.dump(geojson, outfile, indent = 2, separators=(',', ': '))
+
