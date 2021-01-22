@@ -6,7 +6,7 @@ const zlib = require("zlib");
 const NodeCache = require("node-cache" );
 const _ = require("lodash");
 
-const url = process.env.WEATHER_STATIONS_URL || "https://raw.githubusercontent.com/stadtnavi/tilelive-road-weather/main/geojson/weather.geojson";
+const url = process.env.CHARGING_STATIONS_URL || "https://raw.githubusercontent.com/stadtnavi/tilelive-charging-stations/main/geojson/charging-stations.geojson";
 
 const getGeoJson = (url, callback) => {
   request(
@@ -41,7 +41,7 @@ const stringifyArrays = (geoJson) => {
   return geoJson;
 }
 
-class WeatherSource {
+class ChargingStationSource {
   constructor(uri, callback) {
     this.cacheKey = "tileindex";
     this.cache = new NodeCache({ stdTTL: 60, useClones: false });
@@ -78,7 +78,7 @@ class WeatherSource {
       tile = { features: [] };
     }
 
-    const data = Buffer.from(vtPbf.fromGeojsonVt({ weatherstations: tile }));
+    const data = Buffer.from(vtPbf.fromGeojsonVt({ chargingstations: tile }));
 
     zlib.gzip(data, function(err, buffer) {
       if (err) {
@@ -97,16 +97,16 @@ class WeatherSource {
       vector_layers: [
         {
           description: "Roadworks data retrieved from a GeoJSON source",
-          id: "weatherstations"
+          id: "chargingstations"
         }
       ]
     });
   }
 }
 
-module.exports = WeatherSource;
+module.exports = ChargingStationSource;
 
 module.exports.registerProtocols = tilelive => {
-  tilelive.protocols["weatherstations:"] = WeatherSource;
+  tilelive.protocols["chargingstations:"] = ChargingStationSource;
 };
 

@@ -1,11 +1,11 @@
 const fs = require("fs");
 const assert = require("assert");
-const WeatherSource = require("./index");
+const ChargingStationSource = require("./index");
 
-describe("WeatherSource", function() {
+describe("ChargingStationSource", function() {
 
   it("fetch data", (done) => {
-    const source = new WeatherSource(null, () => {});
+    const source = new ChargingStationSource(null, () => {});
     assert.ok(source);
 
     // request tile in Herrenberg
